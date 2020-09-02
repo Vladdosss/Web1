@@ -13,7 +13,7 @@
 	$start = microtime(true);
 	date_default_timezone_set('Europe/Moscow');
 
-	$x= $_GET['X'];
+	$x= round($_GET['X'], 3);
 	$y= $_GET['Y'];
 	$r= $_GET['R'];;
 

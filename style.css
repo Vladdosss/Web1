@@ -91,12 +91,14 @@
   input.new {
     width:100px;
     height: 50px;
+    opacity: 0.85;
     text-decoration: none;
     border: #1071FF 2px solid;
     margin: 2px;
     transition: .5s;
     border-radius: 0px;
     font: 400 16px tahoma;
+
 
     background: -moz-linear-gradient(#D0ECF4, #5BC9E1, 
       #D0ECF4); /* Firefox */
@@ -122,6 +124,7 @@
   .blue {
     width:100px;
     height: 50px;
+    opacity: 0.85;
     text-decoration: none;
     border: #1071FF 2px solid;
     margin: 2px;
