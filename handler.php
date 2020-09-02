@@ -17,7 +17,7 @@
 	$y= $_GET['Y'];
 	$r= $_GET['R'];;
 
-	$res = "FALSE!";
+
 	$bool=TRUE;
 	if (!(($x > -5) & ($x < 5 ))){
 		$fail = "Некорректно задано значение X.\nВозможные варианты: (-5 ... 5).\n";
@@ -51,8 +51,8 @@
 
 
 	if ( ( ($x>=(-$r/2)) and ($x<=0) and ($y>=(-$r)) and ($y<=0) ) 
-		or (($x*$x+$y*$y<=$r*$r) and ($x>=0) and ($y<=0))  
-		or (($y<=$x+$r) and ($x<=0) and ($y>=0)) ) {
+		or (($x*$x+$y*$y<=$r*$r) and (x>=0) and (y<=0))  
+		or ( ($y<=$x+$r) and ($x<=0) and ($y>=0)) ) {
 		$res = "TRUE!";}
 	else {
 		$res = "FALSE!";
