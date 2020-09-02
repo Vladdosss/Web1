@@ -79,23 +79,28 @@ session_start();
 
 					var inputs = document.getElementsByName("R");
 					for(var i = 0; i < inputs.length; i++) inputs[i].onchange = checkboxHandler;
+						
+						function checkboxHandler(e) {
+							for(var i = 0; i < inputs.length; i++)
+								if(inputs[i].checked && inputs[i] !== this) inputs[i].checked=false;
+						}
 
-				</script>
+					</script>
 
-			<?php
-			include('handler.php');
-			?>
-		</td>
-	</tr>
+					<?php
+					include('handler.php');
+					?>
+				</td>
+			</tr>
 
-</table>
+		</table>
 
-<footer class="footer">
-	<th><img id="VT_logo" src="images/vt_logo.png" alt="logo"></th>
+		<footer class="footer">
+			<th><img id="VT_logo" src="images/vt_logo.png" alt="logo"></th>
 
-	<span class="student">Веб-программирование, 2020</span>
-</footer>
-<script src="validator.js"></script>
+			<span class="student">Веб-программирование, 2020</span>
+		</footer>
+		<script src="validator.js"></script>
 
-</body>
-</html>
+	</body>
+	</html>
